@@ -1,73 +1,93 @@
 <style>
-.overlap-container {
-    position: relative;
-    max-width: 80%;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    overflow: hidden; /* Ensure images don't overflow */
+    .overlap-container {
+        position: relative;
+        max-width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* Align items to the right */
+        overflow: hidden;
+        /* Ensure images don't overflow */
+    }
+
+    .overlap-container img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        /* Adjust as needed */
+        height: 100%;
+        /* Adjust as needed */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        /* margin-top: 30px; */
+    }
+
+    .img-1 {
+        z-index: 1;
+    }
+
+    .img-2 {
+        margin-top: 8em;
+        margin-left: -20px;
+        /* Adjust overlap */
+        z-index: 2;
+    }
+
+    .img-3 {
+        margin-left: -20px;
+        /* Adjust overlap */
+        z-index: 3;
+    }
+
+    .img-4 {
+        margin-top: 8em;
+        margin-left: -20px;
+        /* Adjust overlap */
+        z-index: 4;
+    }
+
+    .img-1:hover,
+    .img-2:hover,
+    .img-3:hover,
+    .img-4:hover {
+        z-index: 10;
+        /* Bring to front */
+        transform: scale(1.1);
+        transition: transform 0.7s;
+        border: 2px solid #fff;
+    }
+
+
+     /* Media query for small devices */
+@media (min-width: 576px) {
+    .overlap-container {
+        flex-direction: column; /* Stack images vertically */
+        justify-content: center; /* Center images on small devices */
+    }
 }
 
-.overlap-container img {
-    position: relative;
-    object-fit: cover;
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    border: 2px solid #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* margin-top: 30px; */
-}
-
-.img-1 {
-    z-index: 1;
-}
-
-.img-2 {
-    margin-top: 8em;
-    margin-left: -20px; /* Adjust overlap */
-    z-index: 2;
-}
-
-.img-3 {
-    margin-left: -20px; /* Adjust overlap */
-    z-index: 3;
-}
-
-.img-4 {
-    margin-top: 8em;
-    margin-left: -20px; /* Adjust overlap */
-    z-index: 4;
-}
-
-.img-1:hover {
-    z-index: 10; /* Bring to front */
-    transform: scale(1.1);
-    transition: transform 0.7s;
-}
-
-.img-2:hover {
-    z-index: 10; /* Bring to front */
-    transform: scale(1.1);
-    transition: transform 0.7s;
-}
-
-.img-3:hover {
-    z-index: 10; /* Bring to front */
-    transform: scale(1.1);
-    transition: transform 0.7s;
-}
-
-.img-4:hover {
-    z-index: 10; /* Bring to front */
-    transform: scale(1.1);
-    transition: transform 0.7s;
+ /* Media query for medium devices */
+@media (min-width: 768px) {
+    .overlap-container {
+        flex-direction: row; /* Stack images vertically */
+        justify-content: center; /* Center images on small devices */
+    }
+    .overlap-container img {
+        width: 200px;
+        height: 200px;
+    }
+   
 }
 
 
 </style>
-<div class="col-12 col-md-8 col-lg-6 col-xl-6 overlap-container">
-    <img src="assets/images/hero2.jpeg" alt="Image 1" class="img-1 mx-2">
-    <img src="assets/images/hero2.jpeg" alt="Image 2" class="img-2 mx-2">
-    <img src="assets/images/hero2.jpeg" alt="Image 3" class="img-3 mx-2">
-    <img src="assets/images/hero2.jpeg" alt="Image 4" class="img-4 mx-2">
-</div>
+<section class="container">
+    <div class="row">
+        <div class="col-sm-12 overlap-container">
+            <img src="assets/images/hero2.jpeg" alt="Image 1" class="img-1 mx-2">
+            <img src="assets/images/hero2.jpeg" alt="Image 2" class="img-2 mx-2">
+            <img src="assets/images/hero2.jpeg" alt="Image 3" class="img-3 mx-2">
+            <img src="assets/images/hero2.jpeg" alt="Image 4" class="img-4 mx-2">
+        </div>
+    </div>
+</section>
