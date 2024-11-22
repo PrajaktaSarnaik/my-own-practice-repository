@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Boardwalk Games, your ultimate gaming retreat!  Perfect for casual gamers, enthusiasts, and student gatherings.  Visit us for your next adventure in board gaming.">
+    <title>Mind Oasis | Get Help</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon.png">
+
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/icon.png" alt="icon" id="title-name" width="30" height="30">
+                Mind Oasis
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Awareness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="btn custom-button-filled ms-lg-3 active" aria-current="page" href="gethelp-form.html">Get Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helpFormModal">
+              Get Help
+            </button>
+          </div>
+        <div class="modal fade" id="helpFormModal" tabindex="-1" aria-labelledby="helpFormModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="helpFormModal">Get Help</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+          
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  <form id="getHelpForm">
+                    <!-- Name Field -->
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    </div>
+          
+                    <!-- Email Field -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+          
+                    <!-- Message Field -->
+                    <div class="mb-3">
+                      <label for="message" class="form-label">How can we help?</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Describe your concerns or questions" required></textarea>
+                    </div>
+          
+                    <!-- Consent Checkbox -->
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="consentCheckbox" required>
+                      <label class="form-check-label" for="consentCheckbox">
+                        I agree to the terms and privacy policy.
+                      </label>
+                    </div>
+          
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+   <!-- Footer Section -->
+   <footer class="footer text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Logo and Mission -->
+            <div class="col-md-4 mb-4">
+                <h3 class="footer-logo">Mind Oasis</h3>
+                <p class="small">
+                    Promoting mindfulness, mental health awareness<br> and support for all. Let’s build a healthier
+                    and <br>happier tomorrow together.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="#resources" class="text-light text-decoration-none">Resources</a></li>
+                    <li><a href="#blog" class="text-light text-decoration-none">Blog</a></li>
+                    <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3">Get in Touch</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-envelope"></i> <a href="mailto:info@mindcare.com"
+                            class="text-light text-decoration-none">info@mindoasis.com</a></li>
+                    <li><i class="bi bi-telephone"></i> <a href="tel:+1234567890"
+                            class="text-light text-decoration-none">+1 234 567 890</a></li>
+                </ul>
+                <h6 class="mt-3">Follow Us</h6>
+                <div>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <h6><small>&copy; 2024 MindOasis. All Rights Reserved. |<a href="#privacy"
+                            class="text-light text-decoration-none">Privacy Policy</a></small></h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+<!-- Font Awesome kit -->
+<script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

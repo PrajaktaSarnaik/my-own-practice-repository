@@ -13,7 +13,12 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;   
+}
+.content {
+    flex: 1;
 }
 
 body {
@@ -203,8 +208,22 @@ h6 {
     color: #ffffff;
 }
 
+/* Modal Customization */
+.modal-content {
+    border-radius: 10px;
+    background-color: #f8f9fa; /* Light background for the form */
+  }
+  
+  /* Form Input and Button Styling */
+  #getHelpForm .form-control {
+    border-radius: 5px;
+  }
+  
+  #getHelpForm button {
+    width: 100%;
+  }
 
-
+  /* Footer */
 .footer {
     background-color: var(--primary-color);
     color: #f8f9fa;
