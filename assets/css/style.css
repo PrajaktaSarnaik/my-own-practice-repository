@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 :root {
-    --primary-font: 'Merriweather Sans', sans-serif;
-    --secondary-font: 'Lato', cursive;
-    --primary-color: #4458a1;
-    --secondary-color: #0e0a06;
-    --highlight-color: #416a8e;
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Mogra', cursive;
+    --primary-color:  #014f86;
+    --secondary-color: yellow;
+    --highlight-color: orange;
     --highlight-color-light: #7a9fc2;
 
 }
@@ -23,58 +24,79 @@ body {
 }
 
 
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a stylish look */
+}
+
+.navbar-custom .nav-link {
+    color: #fff; 
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--highlight-color);
+}
+
+.nav-link.active {
+    color: purple; /* Custom text color */
+    background-color: #f0f0f0; /* Custom background color */
+    font-weight: bold; /* Optional for emphasis */
+}
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+}
+.image-size {
+    width: 90%;
+ 
+}
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero1.jpeg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero3.jpeg') no-repeat center center;
     background-size: cover;
     color: #FFEBD4;
     padding: 100px 0;
     text-align: center;
 }
 
-.overlap-container {
+.card-container {
     position: relative;
-    max-width: 80%;
-    align-items: center;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;  /* Equal space between cards */
+    padding: 20px; /* Padding around the container */
 }
 
-.overlap-container img {
-    position: absolute;
-    /* width: 100px;     
-    height: 100px; */
-    object-fit: cover;
-    width: 200px;
-    height: auto;
-    border: 2px solid #fff;
+.card {
+    width: 200px; /* Set consistent card size */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;/* Smooth hover effect */
+    z-index: 1; /* Default z-index for all cards */
+    margin: 10px; /* Equal margin on all sides of the card */
 }
 
-.img-1 {
-    top: 0em;
-    left: 0em;
-    z-index: 1;
+
+.card:hover {
+    transform: scale(1.5); /* Slight zoom-in effect */
+    transition: transform 0.7s;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    z-index: 10; /* Bring to front */
 }
 
-.img-2 {
-    top: 0em;
-    left: 15em;
-    z-index: 3;
+.card:hover h5,
+.card:hover p {
+    color: #ffc107; /* Change text color on hover (Bootstrap warning color) */
 }
-
-.img-3 {
-    top: 10em;
-    left: 7em;
-    z-index: 2;
-}
-
-.img-4 {
-    top: 10em;
-    left: 22em;
-    z-index: 4;
-}
+     
 
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
@@ -93,16 +115,6 @@ body {
     color: #ffffff;
 }
 
-.wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    flex: 1;
-}
-
 .footer {
     background-color: #3B2F2F;
     color: white;
@@ -110,9 +122,18 @@ body {
     /* Adjusted padding to make the footer smaller */
 }
 
-h1,
-h2,
-h3 {
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
+
+/* Adjust spacing and layout for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-overlay {
+        position: static;
+        transform: none;
+        gap: 10px;
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center;
+    }
 }
