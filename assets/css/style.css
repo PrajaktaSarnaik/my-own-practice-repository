@@ -4,7 +4,8 @@
 :root {
     --primary-font: 'Inter', sans-serif;
     --secondary-font: 'Mogra', cursive;
-    --primary-color:  #85ccce; /* #014f86 */
+    --primary-color: #85ccce;
+    /* #014f86 */
     --secondary-color: #1b3a4b;
     --highlight-color: orange;
     --highlight-color-light: #7a9fc2;
@@ -27,19 +28,25 @@ h3 {
     color: var(--primary-color);
 }
 
-.card-container > h2 {
+h5,
+h6 {
+    color: var(--secondary-color);
+}
+
+.card-container>h2 {
     font-family: var(--primary-font);
-   
+
 }
 
 
 .navbar {
     background-color: var(--primary-color);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a stylish look */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow for a stylish look */
 }
 
 .navbar-custom a {
-    color: #fff; 
+    color: #fff;
 }
 
 .navbar-custom .nav-link:hover {
@@ -47,9 +54,9 @@ h3 {
 }
 
 .nav-link.active {
-    color: purple; /* Custom text color */
-    background-color: #f0f0f0; /* Custom background color */
-    font-weight: bold; /* Optional for emphasis */
+      
+    font-weight: bold;
+    /* Optional for emphasis */
 }
 
 /* Buttons */
@@ -76,6 +83,7 @@ h3 {
     background-color: var(--highlight-color);
     color: white
 }
+
 /* Header */
 
 #header .lead {
@@ -89,62 +97,95 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;  /* Equal space between cards */
-    padding: 20px; /* Padding around the container */
+    gap: 60px;
+    /* Equal space between cards */
+    padding: 20px;
+    /* Padding around the container */
 }
 
 .card {
-    width: 200px; /* Set consistent card size */
-    height: 200px; /* Set consistent card size */
+    width: 200px;
+    /* Set consistent card size */
+    height: 200px;
+    /* Set consistent card size */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;/* Smooth hover effect */
-    z-index: 1; /* Default z-index for all cards */
-    margin: 10px; /* Equal margin on all sides of the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    /* Smooth hover effect */
+    z-index: 1;
+    /* Default z-index for all cards */
+    margin: 10px;
+    /* Equal margin on all sides of the card */
 }
 
 .card-body {
-    position: absolute; /* Position it over the image */
-    bottom: 0; /* Align at the bottom of the card */
-    width: 100%; /* Stretch across the card */
+    position: absolute;
+    /* Position it over the image */
+    bottom: 0;
+    /* Align at the bottom of the card */
+    width: 100%;
+    /* Stretch across the card */
     height: 25px;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    color: white; /* Make text readable */
-    padding: 5px; /* Add some spacing */
-    display: block; /* Ensure it's displayed */
-    text-align: center; /* Center the text */
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent background */
+    color: white;
+    /* Make text readable */
+    padding: 5px;
+    /* Add some spacing */
+    display: block;
+    /* Ensure it's displayed */
+    text-align: center;
+    /* Center the text */
 }
 
 .card:hover {
-    transform: scale(1.30); /* Slight zoom-in effect */
+    transform: scale(1.30);
+    /* Slight zoom-in effect */
     transition: transform 0.7s;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
-    z-index: 10; /* Bring to front */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+    /* Enhanced shadow */
+    z-index: 10;
+    /* Bring to front */
 }
 
 .card:hover h2,
 .card:hover p {
-    color: #ffc107; /* Change text color on hover (Bootstrap warning color) */
+    color: #ffc107;
+    /* Change text color on hover (Bootstrap warning color) */
 }
-    
+
 .card-img {
-    opacity: 1; /* Adjust value (0.0 to 1.0) for desired transparency */
+    opacity: 1;
+    /* Adjust value (0.0 to 1.0) for desired transparency */
 }
+
 .card-img:hover {
-    opacity: 1; /* Make the image fully visible on hover */
-    transition: opacity 0.3s ease; /* Smooth transition */
+    opacity: 1;
+    /* Make the image fully visible on hover */
+    transition: opacity 0.3s ease;
+    /* Smooth transition */
 }
 
 .square-card {
-    width: 200px; /* Fixed width */
-    height: 200px; /* Fixed height (same as width) */
-    display: flex; /* Flexbox for centering content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Align text centrally */
-    border: 1px solid #ddd; /* Optional: border for clear visualization */
-    background-color: #f8f9fa; /* Optional: background color */
-    border-radius: 10px; /* Optional: rounded corners */
+    width: 200px;
+    /* Fixed width */
+    height: 200px;
+    /* Fixed height (same as width) */
+    display: flex;
+    /* Flexbox for centering content */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    /* Align text centrally */
+    border: 1px solid #ddd;
+    /* Optional: border for clear visualization */
+    background-color: #f8f9fa;
+    /* Optional: background color */
+    border-radius: 10px;
+    /* Optional: rounded corners */
 }
+
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
@@ -162,25 +203,53 @@ h3 {
     color: #ffffff;
 }
 
+
+
 .footer {
-    background-color: #3B2F2F;
-    color: white;
+    background-color: var(--primary-color);
+    color: #f8f9fa;
+    /* Light text for contrast */
+    font-size: 0.9rem;
     padding: 10px 0;
-    /* Adjusted padding to make the footer smaller */
+    /* Reduce vertical padding */
+    margin-top: 25px;
+    /* Adds space between the footer and the content above */
+
 }
 
+.footer-logo {
+    font-family: var(--secondary-font);
+    /* Elegant and clean typography */
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    /* Soothing green tone for mental health */
+}
 
-/* Adjust spacing and layout for smaller screens */
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-    }
-    
-    .card-overlay {
-        position: static;
-        transform: none;
-        gap: 10px;
-        flex-direction: column; /* Stack the cards vertically */
-        align-items: center;
-    }
+.footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    /* Add a soft green hover effect */
+}
+
+.footer h5 {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+    font-size: 0.9rem;
+}
+
+.bi {
+    font-size: 1.2rem;
 }
