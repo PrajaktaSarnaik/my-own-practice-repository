@@ -17,8 +17,8 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<!-- Bootstrap Icons CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -43,22 +43,41 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Awareness</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Support</a>
+                        <a class="nav-link" href="cardsample.html">CardSupport</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Resources</a>
                     </li>
                     <li class="nav-item"></li>
-                    <a class="btn custom-button-filled ms-lg-3" href="gethelp-form.html">Get Help</a>
+                    <a class="btn custom-button-filled ms-lg-3" data-bs-toggle="modal"
+                        data-bs-target="#helplineModal">Emergency!</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="helplineModal" tabindex="-1" aria-labelledby="helplineModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helplineModalLabel">Urgent Help Is Available!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h2 class="text-danger">1-800-123-4567</h2>
+                    <p>Available 24/7 for immediate mental health support.<br>
+                        If you or someone you know requires urgent assistance, please call immediately!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-
-    <!-- Header with image -->
+    <!-- Header -->
     <header id="header" class="container section my-3">
         <div class="row">
             <div class="col-12 col-xl-6 text-center text-xl-start">
@@ -70,8 +89,10 @@
                     the energy to do so.</p>
                 <p>At <strong>Mind Oasis</strong>, we believe in nurturing that inner strength. Our platform provides
                     resources, support, and guidance to help you take care of your mental well-being. Whether you need
-                    tools to manage stress, advice on building resilience or simply a safe space to find peace, <strong>Mind
-                    Oasis</strong> is here to help you nurture your mind and unlock the limitless possibilities within you.</p>
+                    tools to manage stress, advice on building resilience or simply a safe space to find peace,
+                    <strong>Mind
+                        Oasis</strong> is here to help you nurture your mind and unlock the limitless possibilities
+                    within you.</p>
 
                 <a class="btn custom-button-filled  mb-4" href="gethelp-form.html">Get Help</a>
 
@@ -80,7 +101,7 @@
             <div class="col-12 col-xl-6">
 
                 <div id="image-style" class="card-container">
-                    <!-- Bottom Row -->
+
                     <div class="card text-bg-dark">
                         <img src="assets/images/breathein1.png" class="card-img" alt="abc">
                         <div class="card-body"> <!-- Use card-body to structure the text -->
@@ -94,7 +115,7 @@
                         </div>
                     </div>
 
-                    <!-- Top Row (Overlapping) -->
+
 
                     <div class="card text-bg-dark">
                         <img src="assets/images/recharge.png" class="card-img" alt="abc">
@@ -115,13 +136,55 @@
         </div>
 
     </header>
-
-    <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
+ 
+    <!-- main element  -->
     <main>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Mental Health Support Videos</h2>
+            <div class="row justify-content-center">
+                <!-- Video 1 -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
+                    <div class="card shadow">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dknTQktH5Z0" title="Mental Health Video 1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body text-center"></div>
+                    <h5 class="text-center mt-2">Coping with Stress and Anxiety</h5>
+                    <p class="text-center">This video provides tips and techniques for managing stress and
+                        anxiety.</p>
+                </div>
+            </div>
+        </div>
 
+                <!-- Video 2 -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/tY8NY6CMDFA" title="Mental Health Video 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h5 class="text-center mt-2">The Importance of Mental Health</h5>
+                    <p class="text-center">Learn why mental health is just as important as physical health and how
+                        to care for it.</p>
+                </div>
 
-
-
+                <!-- Video 3 -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/wl9U8cDqv9c" title="Mental Health Video 3"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h5 class="text-center mt-2">How to Manage Depression</h5>
+                    <p class="text-center">This video offers practical steps for managing depression in daily
+                        life.</p>
+                </div>
+            </div>
+        </div>
+        <!-- ***************************************** -->
+       
     </main>
 
 
@@ -181,7 +244,7 @@
 
 
 
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

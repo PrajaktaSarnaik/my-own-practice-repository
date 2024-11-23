@@ -7,14 +7,14 @@
     --primary-color: #85ccce;
     /* #014f86 */
     --secondary-color: #1b3a4b;
-    --highlight-color: orange;
+    --highlight-color: rgb(255, 165, 0);
     --highlight-color-light: #7a9fc2;
 }
 
 html,
 body {
     min-height: 100vh;
-       
+
 }
 
 body {
@@ -34,11 +34,11 @@ h6 {
     color: var(--secondary-color);
 }
 
-.card-container > h2 {
+/* .card-container>h2 {
     font-family: var(--primary-font);
 
-}
-
+} */
+/* Navbar */
 
 .navbar {
     background-color: var(--primary-color);
@@ -55,9 +55,34 @@ h6 {
 }
 
 .nav-link.active {
-      
+
     font-weight: bold;
     /* Optional for emphasis */
+}
+/* Custom styling for the Emergency Helpline Section */
+.emergency-helpline {
+    background-color: #f8d7da; /* Light red background */
+    border: 1px solid #f5c6cb;
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.emergency-helpline h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.emergency-helpline h2 {
+    font-size: 2.5rem;
+    color: #ff0000;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.emergency-helpline p {
+    font-size: 1.2rem;
 }
 
 /* Buttons */
@@ -109,7 +134,7 @@ h6 {
     /* Set consistent card size */
     height: 200px;
     /* Set consistent card size */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
     /* Smooth hover effect */
     z-index: 1;
@@ -142,7 +167,7 @@ h6 {
     transform: scale(1.30);
     /* Slight zoom-in effect */
     transition: transform 0.7s;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     /* Enhanced shadow */
     z-index: 10;
     /* Bring to front */
@@ -183,7 +208,7 @@ h6 {
     /* Optional: border for clear visualization */
     background-color: #f8f9fa;
     /* Optional: background color */
-    border-radius: 10px;
+    border-radius: 5px;
     /* Optional: rounded corners */
 }
 
@@ -203,121 +228,139 @@ h6 {
 #cover-text>h3 {
     color: #ffffff;
 }
+/* Iframe video */
+.ratio iframe {
+       padding: 25px;
+}
 /* Get Help Form */
-.form-container,.modal-content {
+.form-container,
+.modal-content {
     max-width: 700px;
     margin: 50px auto;
-    background: linear-gradient(135deg, #a8d8ea, #fef6e4); /* Subtle gradient background */
+    background: linear-gradient(135deg, #a8d8ea, #fef6e4);
+    /* Subtle gradient background */
     padding: 30px;
-    border-radius: 15px; /* Smooth rounded edges */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  }
+    border-radius: 5px;
+    /* Smooth rounded edges */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+}
 
-  .form-title {
+.form-title {
     font-size: 1.8rem;
     text-align: center;
     font-weight: bold;
-    color: var(--secondary-color); /* Calm, dark text */
+    color: var(--secondary-color);
+    /* Calm, dark text */
     margin-bottom: 15px;
-  }
+}
 
-  .form-description {
+.form-description {
     text-align: center;
     color: #555555;
     margin-bottom: 25px;
     font-size: 1rem;
+}
+
+/* Select dropdown styling */
+.form-select {
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+    width: 100%;
+    /* Ensure full width */
+    box-sizing: border-box;
+}
+
+.form-select option {
+    font-size: 1rem; /* Default font size for the options */
+    box-sizing: border-box;
   }
 
-  .btn-custom,
-  .btn-secondary{
-    background-color: var(--highlight-color);    
+.btn-custom,
+.btn-secondary {
+    background-color: var(--highlight-color);
     color: #ffffff;
     font-size: 1rem;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
-  }
+}
 
-  .btn-custom:hover,
-  .btn-secondary:hover
-   {
-    background-color: var(--secondary-color); /* Darker on hover */
+.btn-custom:hover,
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    /* Darker on hover */
     color: #ffffff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  }
+}
 
-  .form-container input,
-  .form-container textarea {
+.form-container input,
+.form-container textarea {
     border: 2px solid #cccccc;
-    border-radius: 10px;
-  }
+    border-radius: 5px;
+}
 
-  .form-container input:focus,
-  .form-container textarea:focus {
+.form-container input:focus,
+.form-container textarea:focus {
     outline: none;
-    border-color: #00aaff; /* Focus indicator */
+    border-color: #00aaff;
+    /* Focus indicator */
     box-shadow: 0px 0px 5px rgba(0, 170, 255, 0.5);
-  }
+}
+
 /* Modal Customization */
 .modal-content {
-    border-radius: 10px;
-    background-color: #f8f9fa; /* Light background for the form */
-  }
-  
-  /* Adjust transition speed for modal */
-  .modal.fade .modal-dialog {
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
-  }
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    /* Light background for the form */
+}
 
-  .modal.fade.show .modal-dialog {
+/* Adjust transition speed for modal */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog {
     transform: translateY(0);
     opacity: 1;
-  }
+}
 
-  .modal.fade .modal-dialog {
+.modal.fade .modal-dialog {
     transform: translateY(-50px);
     opacity: 0;
-  }
-   /* Modal styling */
-   .modal-content {
-    border-radius: 15px;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 5px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .modal-header,
-  .modal-footer {
+.modal-header,
+.modal-footer {
     border: none;
-  }
+}
 
-  .modal-body {
+.modal-body {
     padding: 20px 0;
-  }
+}
 
-  .modal-title {
+.modal-title {
     font-size: 1.5rem;
     color: var(--secondary-color);
     font-weight: bold;
-  }
+}
 
-  /* Close button styling */
-  .btn-close {
+/* Close button styling */
+.btn-close {
     background-color: transparent;
     border: none;
     font-size: 1.2rem;
-  }
+}
 
-  /* Form Input and Button Styling */
-  #getHelpForm .form-control {
-    border-radius: 5px;
-  }
-  
-  #getHelpForm button {
-    width: 100%;
-  }
-
-  /* Footer */
+/* Footer */
 .footer {
     background-color: var(--primary-color);
     color: #f8f9fa;
@@ -370,8 +413,54 @@ h6 {
 /* Responsive Design */
 /* Media query for small devices */
 @media (max-width: 576px) {
-    .form-container {
-      margin-left: 20px; /* Add margin-left for small screens */
-      margin-right: 20px; /* Add margin-right for small screens */
+
+    .form-container,
+    .modal-content {
+        margin-left: 20px;
+        /* Add margin-left for small screens */
+        margin-right: 20px;
+        /* Add margin-right for small screens */
     }
-  }
+
+    /* Adjust the select dropdown for smaller screens */
+    .form-select {
+        font-size: 1rem;
+        /* Adjust font size of the dropdown */
+        width: 100%;
+        /* Ensure the dropdown takes full width */
+        box-sizing: border-box;
+
+    }
+
+    .form-select option {
+        font-size: 0.8rem;
+        /* Smaller font size for options */
+        padding: 0;
+        /* Reduced padding for the options */
+        box-sizing: border-box;
+
+    }
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+   
+    .form-select {
+        font-size: 1rem;
+        /* Adjust font size of the dropdown */
+        width: 100%;
+        /* Ensure the dropdown takes full width */
+        box-sizing: border-box;
+
+    }
+
+    .form-select option {
+        font-size: 0.67rem;
+        /* Smaller font size for options */
+      
+        box-sizing: border-box;
+
+    }
+
+    }
+  
