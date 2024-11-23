@@ -205,20 +205,56 @@ h6 {
 }
 /* Get Help Form */
 .form-container {
-    max-width: 600px;
-    margin: 50px auto; /* Center the form on the page */
-    background-color: #f8f9fa; /* Light background */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 700px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #a8d8ea, #fef6e4); /* Subtle gradient background */
+    padding: 30px;
+    border-radius: 15px; /* Smooth rounded edges */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   }
 
   .form-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem;
     text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color); /* Calm, dark text */
     margin-bottom: 15px;
-    color: #495057; /* Muted text color */
+  }
+
+  .form-description {
+    text-align: center;
+    color: #555555;
+    margin-bottom: 25px;
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    background-color: var(--highlight-color);    
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-custom:hover {
+    background-color: var(--secondary-color); /* Darker on hover */
+    color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-container input,
+  .form-container textarea {
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+  }
+
+  .form-container input:focus,
+  .form-container textarea:focus {
+    outline: none;
+    border-color: #00aaff; /* Focus indicator */
+    box-shadow: 0px 0px 5px rgba(0, 170, 255, 0.5);
   }
 /* Modal Customization */
 .modal-content {
@@ -284,3 +320,12 @@ h6 {
 .bi {
     font-size: 1.2rem;
 }
+
+/* Responsive Design */
+/* Media query for small devices */
+@media (max-width: 576px) {
+    .form-container {
+      margin-left: 20px; /* Add margin-left for small screens */
+      margin-right: 20px; /* Add margin-right for small screens */
+    }
+  }
