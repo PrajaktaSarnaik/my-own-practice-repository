@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Boardwalk Games, your ultimate gaming retreat!  Perfect for casual gamers, enthusiasts, and student gatherings.  Visit us for your next adventure in board gaming.">
+        content="Mind Oasis, Mental Health Awareness is dedicated to providing support, resources, and guidance to individuals facing mental health challenges. Learn more about managing stress, anxiety, and depression with expert advice.">
     <title>Mind Oasis | Get Help</title>
 
 
@@ -41,18 +41,38 @@
                         <a class="nav-link" href="index.html">Awareness</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Support</a>
+                        <a class="nav-link" href="support.html">Support</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
+                        <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item"></li>
-                    <a class="btn custom-button-filled ms-lg-3 active" aria-current="page" href="gethelp-form.html">Get Help</a>
+                    <a class="btn custom-button-filled ms-lg-3" data-bs-toggle="modal"
+                        data-bs-target="#helplineModal">Emergency!</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="helplineModal" tabindex="-1" aria-labelledby="helplineModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="helplineModalLabel">Urgent Help Is Available!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                  <h2 class="text-danger">1-800-123-4567</h2>
+                  <p>Available 24/7 for immediate mental health support.<br>
+                      If you or someone you know requires urgent assistance, please call immediately!</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
     <main>
       <!-- Get Help Form -->
       <div class="form-container mx-sm-3 mx-md-auto">

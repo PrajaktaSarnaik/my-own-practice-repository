@@ -116,55 +116,39 @@ h6 {
     font-family: var(--secondary-font);
 }
 
-
+/* Image cards */
 .card-container {
     position: relative;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;
-    /* Equal space between cards */
-    padding: 20px;
-    /* Padding around the container */
+    gap: 40px;
+    column-gap: 80px;
 }
 
-.card {
-    width: 200px;
-    /* Set consistent card size */
+#image-style img {
+    width: 100%;
     height: 200px;
-    /* Set consistent card size */
+}
+
+
+.card {
+    width: 14rem;
+    height: 15rem;
+    background-color: #85ccce;
+    padding: 10px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
     /* Smooth hover effect */
-    z-index: 1;
-    /* Default z-index for all cards */
     margin: 10px;
     /* Equal margin on all sides of the card */
 }
 
-.card-body {
-    position: absolute;
-    /* Position it over the image */
-    bottom: 0;
-    /* Align at the bottom of the card */
-    width: 100%;
-    /* Stretch across the card */
-    height: 25px;
-    background: rgba(0, 0, 0, 0.3);
-    /* Semi-transparent background */
-    color: white;
-    /* Make text readable */
-    padding: 5px;
-    /* Add some spacing */
-    display: block;
-    /* Ensure it's displayed */
-    text-align: center;
-    /* Center the text */
-}
-
 .card:hover {
-    transform: scale(1.30);
+    transform: scale(1.15);
     /* Slight zoom-in effect */
     transition: transform 0.7s;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -175,58 +159,12 @@ h6 {
 
 .card:hover h2,
 .card:hover p {
-    color: #ffc107;
+    color: #fff;
     /* Change text color on hover (Bootstrap warning color) */
 }
 
-.card-img {
-    opacity: 1;
-    /* Adjust value (0.0 to 1.0) for desired transparency */
-}
-
-.card-img:hover {
-    opacity: 1;
-    /* Make the image fully visible on hover */
-    transition: opacity 0.3s ease;
-    /* Smooth transition */
-}
-
-.square-card {
-    width: 200px;
-    /* Fixed width */
-    height: 200px;
-    /* Fixed height (same as width) */
-    display: flex;
-    /* Flexbox for centering content */
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    text-align: center;
-    /* Align text centrally */
-    border: 1px solid #ddd;
-    /* Optional: border for clear visualization */
-    background-color: #f8f9fa;
-    /* Optional: background color */
-    border-radius: 5px;
-    /* Optional: rounded corners */
-}
-
-#cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(241, 109, 107, .7);
-    font-size: 130%;
-    position: relative;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-}
-
-#cover-text>h2,
-#cover-text>h3 {
-    color: #ffffff;
+#support-card {
+    max-width: 540px;
 }
 /* Iframe video */
 .ratio iframe {
