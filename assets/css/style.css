@@ -297,7 +297,7 @@ h6 {
 .form-container,
 .modal-content {
     max-width: 700px;
-    margin: 50px auto;
+    margin: 50px 20px;
     background: linear-gradient(135deg, #a8d8ea, #fef6e4);
     /* Subtle gradient background */
     padding: 30px;
@@ -473,16 +473,9 @@ h6 {
 
 /* Responsive Design */
 /* Media query for small devices */
-@media (max-width: 576px) {
+@media (min-width: 576px) {
 
-    .form-container,
-    .modal-content {
-        margin-left: 20px;
-        /* Add margin-left for small screens */
-        margin-right: 20px;
-        /* Add margin-right for small screens */
-    }
-
+   
     /* Adjust the select dropdown for smaller screens */
     .form-select {
         font-size: 1rem;
@@ -492,7 +485,10 @@ h6 {
         box-sizing: border-box;
 
     }
-
+/* Make all service cards the same height for consistency */
+.testimonial-card {
+    min-height: 191px;
+}
     .form-select option {
         font-size: 0.8rem;
         /* Smaller font size for options */
@@ -504,7 +500,7 @@ h6 {
 }
 
 /* Responsive adjustments for medium screens */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
    
     .form-select {
         font-size: 1rem;
@@ -515,6 +511,11 @@ h6 {
 
     }
 
+      /* Make all service cards the same height for consistency */
+     .testimonial-card {
+        min-height: 372px;
+    }
+
     .form-select option {
         font-size: 0.67rem;
         /* Smaller font size for options */
@@ -522,6 +523,16 @@ h6 {
         box-sizing: border-box;
 
     }
+}
+
+    /* Responsive adjustments for medium screens */
+@media (min-width: 1024px) {
+   
+    /* Make all service cards the same height for consistency */
+    .testimonial-card {
+        min-height: 325px;
+    }
+
 
     }
   
