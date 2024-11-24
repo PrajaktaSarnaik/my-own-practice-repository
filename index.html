@@ -81,8 +81,8 @@
     <header id="header" class="container section my-3">
         <div class="row">
             <div class="col-12 col-xl-6 text-center text-xl-start">
-                <h1 class="display-3">Mind Oasis</h1>
-                <p class="lead display-6 sub-heading-color">Find Peace, Recharge Your Mind!</p>
+                <h1 class="display-4"><strong>Mind Oasis</strong></h1>
+                <h2 class="lead display-6 sub-heading-color">Find Peace, Recharge Your Mind!</h2>
                 <p class="my-4">Mental health is the quiet force that influences everything we do. It shapes how we
                     handle life’s challenges, how we connect with others and how we see ourselves in the world. Without
                     mental well-being, life can feel overwhelming and exhausting, like trying to move forward without
@@ -133,61 +133,171 @@
 
     <!-- main element  -->
     <main>
-        <div class="container mt-5">
-            <h2 class="text-center mb-4">Mental Health Support Videos</h2>
-            <div class="row justify-content-center">
-                <!-- Video 1 -->
-                <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
-                   
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/dknTQktH5Z0" title="Mental Health Video 1"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+    
+              <!-- Carousel Controls -->
+              <section class="container my-5">
+                <h2 class="text-center mb-4">Mental Health Myths & Facts</h2>
+                <div id="mythsFactsCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner shadow rounded">
+              
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                      <div class="row align-items-center">
+                        <div class="col-md-6">
+                          <img src="assets/images/fiveinone.jpg" class="img-fluid rounded-start" alt="Mental Health Awareness">
                         </div>
-
-                        <h5 class="text-center mt-2">Coping with Stress and Anxiety</h5>
-                        <p class="text-center">This video provides tips and techniques for managing stress and
-                            anxiety.</p>
-
-                   
-                </div>
-
-                <!-- Video 2 -->
-                <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/tY8NY6CMDFA" title="Mental Health Video 2"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                        <div class="col-md-6 p-4 text-center">
+                          <h4 class="text-primary">Myth</h4>
+                          <p>"Mental health problems are rare."</p>
+                          <h4 class="text-success mt-4">Fact</h4>
+                          <p>1 in 5 adults experience mental illness each year. It’s more common than you think!</p>
+                        </div>
+                      </div>
                     </div>
-                    <h5 class="text-center mt-2">The Importance of Mental Health</h5>
-                    <p class="text-center">Learn why mental health is just as important as physical health and how
-                        to care for it.</p>
-                </div>
-
-                <!-- Video 3 -->
-                <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/wl9U8cDqv9c" title="Mental Health Video 3"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                      <div class="row align-items-center">
+                        <div class="col-md-6">
+                          <img src="assets/images/peoplejob.jpg" class="img-fluid rounded-start" alt="Mental Health Support">
+                        </div>
+                        <div class="col-md-6 p-4 text-center">
+                          <h4 class="text-primary">Myth</h4>
+                          <p>"People with mental illnesses can’t hold down jobs."</p>
+                          <h4 class="text-success mt-4">Fact</h4>
+                          <p>Many people with mental health conditions work successfully in various fields.</p>
+                        </div>
+                      </div>
                     </div>
-                    <h5 class="text-center mt-2">How to Manage Depression</h5>
-                    <p class="text-center">This video offers practical steps for managing depression in daily
-                        life.</p>
+              
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                      <div class="row align-items-center">
+                        <div class="col-md-6">
+                          <img src="assets/images/child1.jpg" class="img-fluid rounded-start" alt="Children's Mental Health">
+                        </div>
+                        <div class="col-md-6 p-4 text-center">
+                          <h4 class="text-primary">Myth</h4>
+                          <p>"Children don't experience mental health issues."</p>
+                          <h4 class="text-success mt-4">Fact</h4>
+                          <p>Children can experience mental health challenges, and early intervention is crucial.</p>
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+              
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#mythsFactsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#mythsFactsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </section>
+          <!-- Testimonials Section -->
+          <div class="container py-5">
+            <h2 class="text-center mb-4">What People Are Saying</h2>
+            <div class="row gy-4">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="assets/images/test4.jpg" alt="John Doe" class="testimonial-image mx-auto">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-text">"Mindfulness & Serenity has transformed my life. The resources and community have been invaluable for my mental health journey."</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="assets/images/test5.jpg" alt="Jane Smith" class="testimonial-image mx-auto">
+                        <h3 class="testimonial-name">Jane Smith</h3>
+                        <p class="testimonial-text">"The mindfulness techniques I learned here have helped me find peace and balance in my daily life. Highly recommended!"</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="assets/images/test6.jpg" alt="Sarah Johnson" class="testimonial-image mx-auto">
+                        <h3 class="testimonial-name">Sarah Johnson</h3>
+                        <p class="testimonial-text">"A truly transformative experience. The guided meditations and resources have been a blessing for my mental health."</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- ***************************************** -->
+        <!-- FAQ -->
+        <div class="container mt-5 mb-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>What is mindfulness?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Mindfulness is the practice of being aware of your thoughts, feelings, and body sensations in the present moment, without judgment.
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>How can mindfulness help with mental health?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Mindfulness can help reduce stress, anxiety, and depression by helping you stay grounded and present. It encourages self-awareness and acceptance, leading to a more balanced state of mind.
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>How do I start practicing mindfulness?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Start by practicing mindfulness through simple breathing exercises, meditation, or mindful activities like walking or eating. You can find many guided meditations online or through apps.
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <strong>Is mindfulness suitable for everyone?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, mindfulness can benefit anyone. It is a skill that can be developed over time and can help people from all walks of life cope with stress, anxiety, and other challenges.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
 
     </main>
 
 
     <!-- Footer Section -->
-    <footer class="footer text-light py-5 mt-auto">
+    <footer class="footer text-light py-3 mt-auto text-center">
         <div class="container">
             <div class="row">
                 <!-- Logo and Mission -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-2">
                     <h3 class="footer-logo">Mind Oasis</h3>
                     <p class="small">
                         Promoting mindfulness, mental health awareness<br> and support for all. Let’s build a healthier
@@ -196,7 +306,7 @@
                 </div>
 
                 <!-- Quick Links -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-2">
                     <h5 class="mb-3">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#about" class="text-light text-decoration-none">About Us</a></li>
@@ -207,7 +317,7 @@
                 </div>
 
                 <!-- Contact Info -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-2">
                     <h5 class="mb-3">Get in Touch</h5>
                     <ul class="list-unstyled">
                         <li><i class="bi bi-envelope"></i> <a href="mailto:info@mindcare.com"
@@ -226,7 +336,7 @@
             </div>
 
             <!-- Bottom Row -->
-            <div class="row mt-4">
+            <div class="row mt-2">
                 <div class="col-12 text-center">
                     <h6><small>&copy; 2024 MindOasis. All Rights Reserved. |<a href="#privacy"
                                 class="text-light text-decoration-none">Privacy Policy</a></small></h6>

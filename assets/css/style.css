@@ -8,7 +8,7 @@
     /* #014f86 */
     --secondary-color: #1b3a4b;
     --highlight-color: rgb(255, 165, 0);
-    --highlight-color-light: #7a9fc2;
+    --highlight-color-light: #fef6e4;
 }
 
 html,
@@ -17,13 +17,13 @@ body {
 
 }
 
-body {
+body,h1,h2 {
     font-family: var(--primary-font);
 }
 
 
-h1,
-h2,
+
+
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
@@ -38,6 +38,8 @@ h6 {
     font-family: var(--primary-font);
 
 } */
+
+ 
 /* Navbar */
 
 .navbar {
@@ -116,6 +118,11 @@ h6 {
     font-family: var(--secondary-font);
 }
 
+#header h2 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
 /* Image cards */
 .card-container {
     position: relative;
@@ -138,7 +145,8 @@ h6 {
 .card {
     width: 14rem;
     height: 15rem;
-    background-color: #85ccce;
+    background: linear-gradient(135deg, #a8d8ea, #fef6e4);
+    /* background-color: #85ccce; */
     padding: 10px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
@@ -163,12 +171,127 @@ h6 {
     /* Change text color on hover (Bootstrap warning color) */
 }
 
-#support-card {
-    max-width: 540px;
+
+
+/* Carousel */
+.carousel-inner {
+    /* background: #fff; */
+    background: linear-gradient(135deg, #a8d8ea, #fef6e4);
+  }
+
+  .carousel-item {
+    /* border: 1px solid #ddd; */
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .carousel-item img {
+    height: 200px; /* Adjust the height of the images */
+    width: 400px;   /* Keep the aspect ratio of the images */
+    border-radius: 50%;
+    border: 2px solid var(--highlight-color);
+    object-fit: cover;
+  }
+
+  .text-primary {
+    color: #3498db !important;
+    font-weight: bold;
+  }
+
+  .text-success {
+    color: #2ecc71 !important;
+    font-weight: bold;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none ;
+  }
+
+  .carousel-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+/* Testimonial card */
+.testimonial-card {
+    background: linear-gradient(135deg, #a8d8ea, #fef6e4);
+    /* background-color: var(--highlight-color-light); */
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.03);
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid var(--highlight-color);
+}
+
+.testimonial-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #6c757d;
 }
 /* Iframe video */
 .ratio iframe {
        padding: 25px;
+}
+/* Add animation to accordion */
+.accordion-button {
+    background-color:  var(--highlight-color-light); /* Light blue background */
+    color:  var(--secondary-color); /* Dark blue text */
+    border: 1px solid #b3d9ff; /* Light blue border */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for accordion button */
+.accordion-button:hover {
+    background-color: #e0f2ff; /* Slightly darker blue on hover */
+    border-color: var(--secondary-color); /* Darker border on hover */
+    color: #003d80; /* Darker text color on hover */
+}
+
+/* Active state for accordion button */
+.accordion-button:not(.collapsed) {
+    background-color: #a8d8ea;/* Different color when active */
+    color: var(--highlight-color); /* Darker text when active */
+    border-color: #80c2ff; /* Matching border color */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom border color for accordion body */
+.accordion-body {
+    border: 1px solid #80c2ff; /* Light blue border */
+    border-top: none; /* No border on top to blend with the button */
+    padding: 1rem;
+    background-color: #f9fcff; /* Light background for the body */
+}
+ .accordion-collapse {
+    overflow: hidden;
+    transition: max-height 0.1s ease-out, padding 0.1s ease-out;
+}
+
+.accordion-collapse.collapse {
+    max-height: 0;
+    padding: 0;
+}
+
+.accordion-collapse.show {
+    max-height: 300px; /* Adjust based on content height */
+    padding: 1rem;
 }
 /* Get Help Form */
 .form-container,
