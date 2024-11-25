@@ -184,7 +184,7 @@ h6 {
 
 .card:hover h2,
 .card:hover p {
-    color: #fff;
+    color: var(--secondary-color);
     /* Change text color on hover (Bootstrap warning color) */
 }
 
